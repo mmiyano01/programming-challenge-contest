@@ -1,0 +1,178 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-11 13:47:32.535789 UTC
+
+interface main@main:SubsetSum 8002
+  interface hash: ea7484febdea934812d79220ae6bd3b0
+  ABI hash: eccebc27808b22e192eb74c70d720491
+  export-list hash: 7799f4fbd56163b4e9867e6c21359767
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 20e13d12ee336528285beb70f644b84c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  SubsetSum.subsetSum
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+c3d665b135d12fa6c8ba8c2aa9b9e4bf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   SubsetSum.$trModule2
+                   SubsetSum.$trModule1) -}
+d5e97e90ecf3f0a484f762a8ad93c91a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "SubsetSum"#) -}
+9de91890b8da75e77fcece9e55d02b6f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+fef009392e17a2553f1a384d43cef53f
+  $wcalc :: GHC.Prim.Int# -> [GHC.Types.Int] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+6d49afcec0b48e4a14d47e133c3179eb
+  subsetSum :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                SubsetSum.subsetSum1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e996c92d25cc67fcb671c5f1877a38f6
+  subsetSum1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        SubsetSum.subsetSum17
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        SubsetSum.subsetSum14
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        SubsetSum.subsetSum13
+                        GHC.Types.True
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   SubsetSum.subsetSum2
+                   GHC.Types.True
+                   ipv4 } } }) -}
+0f5071dc393cb5b78f70382b726b43b8
+  subsetSum10 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+b8d6dad4b50cb78e33ce9a336d5ab316
+  subsetSum11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+46ade587876257f69ca86530bf69870e
+  subsetSum12 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+4d1ce5f180a093a435a53a242726dfb7
+  subsetSum13 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$wshowSignedInt
+                        0#
+                        1#
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Types.: @ GHC.Types.Char ww5 ww6 }) -}
+70ccb81a1ebbdf4531d23fd401ab86b1
+  subsetSum14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.showList__2
+                   SubsetSum.subsetSum15) -}
+6aee58372778e82d2cc77d7e9b68d12f
+  subsetSum15 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$wshowSignedInt
+                        0#
+                        1#
+                        SubsetSum.subsetSum16 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+9c174755263f501ed18b50103f70b8ed
+  subsetSum16 :: GHC.Base.String
+  {- Unfolding: (SubsetSum.subsetSum_showl SubsetSum.subsetSum4) -}
+0dd38349f9f7e7abe4e2d05e602cdfcd
+  subsetSum17 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0#
+                        SubsetSum.subsetSum18
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+ea9f54bcba0590044bd4167d3f7e8ca6
+  subsetSum18 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+3b04fd1a2c01837ee41b34b20f65b786
+  subsetSum2 :: GHC.Base.String
+  {- Unfolding: (case SubsetSum.$wcalc
+                        1#
+                        SubsetSum.subsetSum3 of wild {
+                   GHC.Types.False -> GHC.Show.shows18
+                   GHC.Types.True -> GHC.Show.shows17 }) -}
+7d307a6712d86461913fd87afbf202a8
+  subsetSum3 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   SubsetSum.subsetSum12
+                   SubsetSum.subsetSum4) -}
+9133ce90f380b3b74bcbacbd09d46201
+  subsetSum4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   SubsetSum.subsetSum11
+                   SubsetSum.subsetSum5) -}
+4c3c6a7693c74966794164fd0f53d85f
+  subsetSum5 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   SubsetSum.subsetSum10
+                   SubsetSum.subsetSum6) -}
+a4bc18625893bc347d7dc4bca83ede0e
+  subsetSum6 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   SubsetSum.subsetSum9
+                   SubsetSum.subsetSum7) -}
+ed1662a4223ecd0f92e42528441e365b
+  subsetSum7 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   SubsetSum.subsetSum8
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+be4c4d5a7915371973577b0a3bdb4360
+  subsetSum8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+cfabdf6c3a8d8d1c7685f6b421caca56
+  subsetSum9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+817f33ea5bedd62c414fdaecf47e3a8a
+  subsetSum_showl :: [GHC.Types.Int] -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
