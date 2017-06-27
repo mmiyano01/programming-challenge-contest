@@ -25,14 +25,15 @@ fun main(args: Array<String>){
 class ShotestPathOfMaze(val maze: Any, val n: Int, val m: Int, val start_n: Int, val start_m: Int, val goal_n: Int, val goal_m: Int){
   fun find_path(){
     //maze: Any, n: Int, m: Int, start_n: Int, start_m: Int, goal_n: Int, goal_m: Int
-    //各マス毎に記録を残すための２次元配列を宣言
+    //各マス毎に記録を残すための２次元配列
     var record = array2dOfNode(n,m)
-
-    var stack = arrayOfNulls<Coodinate?>(0)
+    //移動途中のマスを保管するリスト
+    val stack = mutableListOf<Coodinate>()
 
     //スタート地点のNodeを生成、対象のマスに保持させる。
     record[start_n-1][start_m-1] = Node(0,true)
-    stack = stack.plusElement(Pair(start_n-1,start_m-1))
+
+    stack.add(Coodinate(start_n-1,start_m-1))
     println(stack[0])
   }
 
@@ -40,7 +41,6 @@ class ShotestPathOfMaze(val maze: Any, val n: Int, val m: Int, val start_n: Int,
   fun check4directions(taget_n: Int, target_m: Int, record: Any){
 
   }
-
 
   //Nodeを持つ２次元配列の宣言用function
   //Null safetyのためNode?を設定
